@@ -41,3 +41,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT strftime('%Y', c23) AS ano, AVG(c21) AS promedio_c21_por_ano
+FROM tbl2
+GROUP BY strftime('%Y', c23);
